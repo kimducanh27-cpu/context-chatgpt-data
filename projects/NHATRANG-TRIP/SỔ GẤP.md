@@ -1137,3 +1137,11 @@ nút đính kèm của ChatGPT không hiện ô nhập tệp để thao tác upl
 canonical_packet_version 4. Tổng email block: 27 (CTX-ACTIVE 2,
 CTX-ARCHIVED 25).
 Cập nhật lần cuối: 2026-11-12 02:24 +07.
+
+CẬP NHẬT ARCHIVE — TRIAL #5, BƯỚC 3 (WORD-CAP OVERFLOW, BƯỚC (a)):
+- SỰ KIỆN SUPERSEDED: CTX-NHATRANG-20261111-T3-01-v1 (Tier-3) chuyển từ current sang archived; file được giữ nguyên nội dung tại projects/NHATRANG-TRIP/archived/CTX-NHATRANG-20261111-T3-01-v1.md.
+- Lý do: WORD-CAP OVERFLOW bước (a). Test 19 FAIL; compaction đã chứng minh không thể đưa packet về cap ~6.000 từ bằng cách nén trường 17: T3-01-v1 = 9.212 từ, trường 17 = 2.229 từ; ngay cả xóa toàn bộ trường 17 thì block vẫn 6.983 từ. Packet tại thời điểm kiểm tra = 10.316 từ.
+- canonical_packet_version: 4 → 5.
+- TRẠNG THÁI PACKET SAU ARCHIVE: (1 T1, 0 T2, 0 T3) = count 1; block duy nhất còn current là CTX-NHATRANG-20261111-16-v1 (Tier-1), khoảng 1.104 từ. T3-01-v1 không còn trong current.
+- Phạm vi thay đổi: chỉ NHATRANG-TRIP; không thay đổi HANOI; không tạo block mới.
+Cập nhật lần cuối: 2026-11-12 +07 (Trial #5, bước 3).
