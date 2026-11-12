@@ -1,0 +1,1 @@
+Trial #4 write-access check — 2026-11-12.
