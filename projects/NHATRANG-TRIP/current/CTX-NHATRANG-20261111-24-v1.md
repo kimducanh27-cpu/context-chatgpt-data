@@ -3,7 +3,7 @@
 3. block_id: [CTX-NHATRANG-20261111-24]
 4. tier: [1]
 5. version: [1]
-6. source_chat_url: [[https://chatgpt.com/c/6af549fb-aea4-83ec-b33f-314dba3447a1](https://chatgpt.com/c/6af549fb-aea4-83ec-b33d-314dba3447a1)]
+6. source_chat_url: [[https://chatgpt.com/c/6af549fb-aea4-83ec-b33f-314dba3447a1](https://chatgpt.com/c/6af549fb-aea4-83ec-b33f-314dba3447a1)]
 7. source_range: [Chặng 24: chốt ngày khởi hành. Mình vừa đối chiếu lịch làm việc thứ Sáu → Chốt ngày khởi hành: đi thứ Sáu 20/11/2026, về Chủ nhật 22/11/2026. Giờ xe và]
 8. parent_block_ids: [(chưa có)]
 9. status: [current]
