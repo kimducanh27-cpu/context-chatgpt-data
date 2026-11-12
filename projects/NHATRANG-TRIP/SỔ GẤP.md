@@ -1234,3 +1234,14 @@ NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-22 | v1 | current |
 - Word count block 22 (tách khoảng trắng, chỉ 18 trường): 436 từ. Packet sau fold: 16-v1 ~1.104 + 17-v1 657 + 18-v1 643 + 19-v1 410 + 20-v1 382 + 21-v1 366 + 22-v1 436 = ~3998 từ (ước tính; block 16-v1 là số ước lượng).
 - Trạng thái packet sau fold: (7 T1, 0 T2, 0 T3) = count 7; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1 + 20-v1 + 21-v1 + 22-v1. canonical_packet_version 11.
 Cập nhật lần cuối: 2026-11-12 12:24 +07.
+
+NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-23 | v1 | current |
+2026-11-12 | Chặng 23 rà soát cuối: tổng dự toán 4.110.000₫/5.000.000₫, dư 890.000₫; các quyết định 17–22 không mâu thuẫn | Chặng 23: rà soát tổng lần cuối trước khi bắt đầu chuẩn bị. Mình vừa → Chốt bản rà soát tổng lần cuối: mọi quyết định còn hiệu lực, tổng dự | Tier-1 đủ 2 phần: rồi | source-to-capture: 4 tin, anchor đầu/cuối đã đối chiếu; kiểm tra trùng với source_range hiện có: không trùng; điểm cắt tiếp nối block 22-v1 | chưa chạy | FOLD
+- Block: CTX-NHATRANG-20261111-23-v1, Tier-1, current; parent_block_ids: (chưa có); canonical_packet_version 12.
+- Quyết định: rà soát xác nhận mọi quyết định chặng 17–22 còn hiệu lực, không có mâu thuẫn; tổng dự toán 4.110.000₫, dư dự kiến 890.000₫ trong ngân sách 5.000.000₫.
+- Cơ cấu dự toán: xe Phương Trang 2 lượt 1.400.000₫; phòng Glory 2 đêm 840.000₫; ăn uống 950.000₫; vé tham quan 140.000₫; di chuyển nội thành 480.000₫; dự phòng 300.000₫.
+- Ngày khởi hành vẫn là thứ Sáu nhưng chưa có ngày/tháng cụ thể; giữ trạng thái chờ chốt ngày như block 16.
+- Việc đang dở: mua bổ sung D-7; kiểm tra giờ xe D-3; sau khi chốt ngày mới đặt vé xe, đặt phòng, đặt bàn và vé tham quan.
+- Word count block 23 (tách khoảng trắng, chỉ 18 trường): 387 từ. Packet sau fold: 16-v1 ~1.104 + 17-v1 657 + 18-v1 643 + 19-v1 410 + 20-v1 382 + 21-v1 366 + 22-v1 436 + 23-v1 387 = ~4385 từ (ước tính; block 16-v1 là số ước lượng).
+- Trạng thái packet sau fold: (8 T1, 0 T2, 0 T3) = count 8; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1 + 20-v1 + 21-v1 + 22-v1 + 23-v1. canonical_packet_version 12. Chặng tiếp theo 24 cần MERGE trước khi gấp theo yêu cầu workflow.
+Cập nhật lần cuối: 2026-11-12 12:26 +07.
