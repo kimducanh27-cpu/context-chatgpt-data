@@ -1277,3 +1277,116 @@ NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-24 | v1 | current | 2026-11
 - Trạng thái packet sau fold: (1 T1, 1 T2, 0 T3) = count 2; current: CTX-NHATRANG-20261111-24-v1 + CTX-NHATRANG-20261111-T2-02-v1; canonical_packet_version 14.
 - Phạm vi thay đổi: chỉ NHATRANG-TRIP; không thay đổi dự án HANOI.
 Cập nhật lần cuối: 2026-11-12 12:35 +07.
+
+
+CẬP NHẬT REBUILD — TEST 25 / CTX-NHATRANG-20261111-T3-02-v1 (2026-11-12 12:56 +07)
+- Loại thao tác: REBUILD T3-01-v1 từ đúng 8 parent được yêu cầu; KHÔNG đọc/không nén từ nội dung T3-01-v1.
+- Nguồn đã fetch đầy đủ từ main: archived/T2-01-v1, archived/09-v1, archived/10-v1, archived/11-v1, archived/12-v1, archived/13-v1, archived/14-v1, archived/15-v1; đã đọc Sổ Gấp. T3-01-v1 tồn tại tại archived/; T3-02-v1 chưa tồn tại tại current/.
+- Phân loại inventory: đơn vị đối chiếu là nhóm nội dung riêng biệt trong các trường 14–18; câu trùng giữa trường 14/15/16/17 được gom một lần và ghi MERGED. Không dùng số lượng bullet thô làm số mục vì nhiều dòng là cùng một quyết định bị lặp lại ở trường dữ kiện.
+- GATE (a): PASS — từng nhóm nội dung trong T3-02 đã được đối chiếu về 8 parent; không có quyết định mới tự suy diễn. Các tham chiếu block24/T2-02 trong trường 18 chỉ giải thích việc không mang dữ kiện đã bị packet mới ghi đè, không được thêm thành quyết định lấy từ parent.
+- GATE (b): PASS — toàn bộ các nhóm nội dung của 8 parent đã được hạch toán như ledger dưới đây; không có mục cha vắng mặt không lý do.
+
+LEDGER HAI CHIỀU THEO PARENT (KEPT / MERGED = đã hạch toán; DROPPED = loại có lý do):
+
+A. CTX-NHATRANG-20261111-T2-01-v1 [Tier-2]
+- 14.A khung chuyến đi, số người, thời lượng, điểm xuất phát, ngân sách tổng và phân bổ: MERGED vào 14/15/17 T3-02; các điều kiện tiết kiệm và ưu tiên trải nghiệm địa phương được KEPT.
+- 14.B lựa chọn Phương Trang, giờ đi/về, đơn giá, tổng vé, thời lượng ước tính, SE8 và máy bay dự phòng: MERGED; giữ lựa chọn Phương Trang và SE8; DROPPED máy bay như phương án không được chọn/không phù hợp hạn mức.
+- 14.C Glory và các thuộc tính phòng/địa điểm, tiêu chí tiện nghi, so sánh Emmie/Sun City: MERGED; giữ Glory và điều kiện kiểm tra phòng/giá; các mô tả tiện nghi không được xác minh thực tế không được biến thành bảo đảm.
+- 14.D lịch ngày 1 (đến bến, taxi, nhận phòng, biển, M&K, chợ đêm, chi phí): MERGED ở mức khung; thời điểm/lộ trình cũ bị cập nhật thì DROPPED khỏi quyết định hiện hành.
+- 14.E lịch ngày 2 (tự khám phá, Viện Hải dương học, từ chối tour đảo vượt ngân sách, chi phí): MERGED; các khoản trùng về ăn uống/giá vé gom vào một dòng.
+- 14.F lịch ngày 3 (Ponagar, Long Sơn, quay lại khách sạn, ra bến trước chuyến 14:00): MERGED; giữ nguyên nguyên tắc tạo khoảng đệm trước xe về.
+- 14.G ngân sách ăn uống, bốn món đặc sản, hải sản trong hạn mức: MERGED; chi tiết từng bữa/quán đã được cập nhật trong packet mới nên không chép lại như lịch hiện hành.
+- 14.H tổng ngân sách, cơ cấu chi, dự phòng, số dư và checklist 10 việc: MERGED; checklist cũ chỉ giữ đầu việc còn hiệu lực.
+- 15 quy mô, tổng ngân sách, phân bổ, tiết kiệm, giới hạn tour, dự phòng: MERGED; số liệu 1.880.000₫ di chuyển nội thành+liên tỉnh được giữ đúng ngữ cảnh, không ghi đè hạn mức 1.600.000₫ xe liên tỉnh.
+- 15 lưu trú, vị trí, hạng phòng, tiện nghi, thuế/phí/phụ thu và điều kiện nhận/trả: MERGED các điều kiện chất lượng/giá; DROPPED giờ nhận sau 15:00/trả trước 14:00 do block24 hiện hành ghi đè.
+- 16 toàn bộ đầu việc từ ngày đi, xe, khách sạn, di chuyển, quán ăn, tham quan, checklist, thời tiết, hóa đơn và dự phòng: MERGED thành 9 nhóm việc trường 16; các bước đã bị packet mới thay thế không lặp lại.
+- 17.A ngân sách gốc và mục tiêu ăn/lưu trú: MERGED, giữ số tiền một lần.
+- 17.B giá Cúc Tùng/An Anh, Phương Trang, SE8, máy bay và phép tính vé: MERGED giá Phương Trang/SE8; DROPPED Cúc Tùng/An Anh và máy bay như phương án không chọn.
+- 17.C dữ kiện Glory/Emmie/Sun City, giá, diện tích, khoảng cách, tiện nghi: MERGED giá/diện tích/khoảng cách hữu ích; thuộc tính chưa xác minh không được nâng thành xác nhận.
+- 17.D–F dữ kiện lịch ngày 1–3, taxi, biển, chợ đêm, Viện, Ponagar, Long Sơn, giờ và chi phí: MERGED thành các nhóm lịch/chi trong 14 và 17; câu lặp được gộp.
+- 17.G bốn món, quán và dải giá, giá hải sản theo kg, yêu cầu hỏi giá/cân: MERGED phần dải giá và quy tắc kiểm soát hải sản; chi tiết menu theo ngày cũ không còn là lịch hiện hành.
+- 17.H tổng chi, số dư, dự phòng, checklist: MERGED; các khoản được tính một lần.
+- 17.I tên chat, nguồn capture, metadata và mô tả lịch sử: DROPPED vì là provenance/biên tập, không phải quyết định/ràng buộc du lịch; parent link đã nằm ở Phần 2.
+- 18 các mục “đã bỏ đi cố ý” của chính T2-01: MERGED các nguyên tắc không bịa ngày, mã đặt phòng, đặt vé, thanh toán; bỏ câu biên tập trùng.
+
+B. CTX-NHATRANG-20261111-09-v1 [Tier-1]
+- 14 chiều đi 08:00 thứ Sáu, Bến xe Miền Đông Mới, đến Nha Trang dự kiến 15:00; chiều về 14:00 Chủ nhật từ Bến xe phía Nam, về TP.HCM dự kiến 21:00: MERGED giờ khởi hành/điểm đón trả; DROPPED giờ đến như cam kết vì nguồn chỉ ước tính và các nguồn ước tính thời lượng không đồng nhất.
+- 14 yêu cầu 2 ghế mỗi chiều, lưu số ghế, kiểm tra tên/ngày/giờ/điểm đón trả: MERGED vào nhiệm vụ xác nhận vé.
+- 14 giá 350.000₫/người/lượt, tổng 1.400.000₫; trạng thái chưa đặt: MERGED.
+- 14 phương án SE8 261.000₫/người: MERGED như dự phòng.
+- 15 kiểm tra chỗ, ghế, giá cuối/phụ phí, địa chỉ bến, giấy tờ, mã vé, đến sớm 30 phút: MERGED toàn bộ thành quy tắc xe ở trường 15.
+- 16 mục 1–16 (chỗ chiều đi/về, chọn ghế, xác minh thông tin, giá/ phụ phí, thanh toán, địa chỉ bến, đến sớm, giấy tờ, vé/mã, SE8, cập nhật bằng chứng, đối chiếu thực trả): MERGED thành đầu việc vận tải ở trường 16; không bỏ tác vụ còn hiệu lực.
+- 17a/17b yêu cầu và nội dung chặng 9 lặp lại cùng giờ/giá/checklist: MERGED vào trường 17 một lần.
+- 18 cấm tự thêm ngày, mã vé, chỗ, tình trạng vé, thanh toán, giá cuối hoặc địa chỉ bến: MERGED thành quy tắc chống khẳng định thiếu chứng cứ ở trường 15/18.
+
+C. CTX-NHATRANG-20261111-10-v1 [Tier-1]
+- 14 Glory, địa chỉ 84A Trần Phú, Superior City View, 2 người, 2 đêm, 420.000₫/đêm, 840.000₫, gần biển: MERGED.
+- 14 Emmie 569.900₫/đêm và Sun City 700.000₫/đêm làm phương án dự phòng: MERGED như lựa chọn thay thế có điều kiện.
+- 14 trạng thái đã chọn Glory nhưng chưa xác nhận đặt: MERGED.
+- 15 kiểm tra còn phòng, số người, đúng 2 đêm, giá cuối, thuế/phí/phụ thu, loại phòng, điều hòa, phòng tắm riêng, nước nóng, chỉ thanh toán khi đủ thông tin, cần văn bản xác nhận: MERGED toàn bộ vào quy tắc khách sạn.
+- 15 giờ nhận sau 15:00/trả trước 14:00: DROPPED vì block24 hiện hành ghi đè giờ nhận từ 14:00/trả trước 12:00; không chép giờ cũ vào T3-02.
+- 16 mục 1–17 (tình trạng phòng, số người, giờ, giá, tổng, thuế/phí, loại phòng/tiện nghi, thanh toán, văn bản xác nhận, Emmie/Sun City dự phòng): MERGED các tác vụ còn hiệu lực vào mục 16; thời gian cũ bị ghi đè không mang sang.
+- 17a/17b nội dung yêu cầu và các bước chặng 10: MERGED vào dữ kiện khách sạn trường 17 một lần.
+- 18 không tự khẳng định có phòng/giá cuối/thuế/đặt phòng/thanh toán/mã/số điện thoại/tiện nghi đã kiểm tra: MERGED vào quy tắc không suy diễn trạng thái đặt chỗ.
+
+D. CTX-NHATRANG-20261111-11-v1 [Tier-1]
+- 14 quy mô 2 người, 3 ngày 2 đêm; nhóm quần áo, đồ cá nhân, đồ bơi, chăm sóc cá nhân, thuốc, thiết bị, giấy tờ và tiền: KEPT ở mức nghĩa vụ chuẩn bị hành lý/giấy tờ; DROPPED số lượng quần áo/khăn và checklist chi tiết cũ vì packet mới đã cập nhật danh sách hành lý.
+- 14 ngân sách 5.000.000₫, dự toán 4.110.000₫, dư 890.000₫, xe/phòng chưa được xác nhận: MERGED; lặp lại số tiền chỉ ghi một lần.
+- 14 theo dõi chi tiêu theo ngày, thời gian/nội dung/số tiền/phương thức, giữ hóa đơn: MERGED.
+- 15 kiểm tra hành lý, giấy tờ hai người, thuốc theo hướng dẫn, xác nhận xe/phòng trong tuần cuối, đối chiếu bến, đến sớm 30 phút, chuẩn bị tiền, giữ chứng từ, theo dõi dự phòng và đối chiếu tổng thực chi: MERGED vào trường 15.
+- 16 mục 1–15 (đóng gói, đồ bơi/khăn, chống nắng/vệ sinh/thuốc, sạc, giấy tờ, đặt vé/phòng, bến xe, tiền mặt, lưu xác nhận, ghi chi, hóa đơn, đối chiếu ngân sách, dự phòng): MERGED thành các nhóm việc chuẩn bị và kiểm soát chi.
+- 17a/17b danh sách hành lý và yêu cầu ngân sách lặp lại trường 14/15: MERGED một lần; không giữ câu lặp.
+- 18 các điều cấm bịa/không coi việc chuẩn bị hay đặt chỗ là hoàn thành: MERGED vào quy tắc chứng cứ/trạng thái.
+
+E. CTX-NHATRANG-20261111-12-v1 [Tier-1]
+- 14 dự báo cụ thể 13–15/11/2026 (26–31°C mưa dông; 26–32°C mưa rào; 26–33°C có mây; gió Đông Bắc 6 m/s ngày 11/11): DROPPED khỏi quyết định hiện hành vì đây là dự báo tạm cho cuối tuần gần nhất, còn block24 chốt ngày đi 20–22/11; không thể áp dự báo cũ lên ngày mới.
+- 14/15 quy tắc tránh hoạt động ngoài trời khi mưa lớn/dông, chuyển phương án trong nhà, kiểm tra điều kiện đi lại: MERGED.
+- 15 kiểm tra dự báo trong 24 giờ trước chuyến, không tự gán gió theo từng ngày, không cho rằng mưa chắc chắn làm tăng chi phí, ghi chi phí thực tế và dùng dự phòng khi cần: MERGED.
+- 15 danh sách áo mưa/túi chống nước/đế chống trượt/túi đồ ướt: KEPT như nhóm chuẩn bị chống mưa; checklist số lượng cụ thể đã được cập nhật ở packet mới, không lặp chi tiết cũ.
+- 16 mục 1–14 (chốt ngày, kiểm tra dự báo, theo dõi mưa/gió, quyết định biển/chợ/Viện/Ponagar/Long Sơn, chuẩn bị đồ mưa, ghi chi và theo dõi dự phòng): MERGED thành tác vụ thời tiết và an toàn.
+- 17a/17b phần yêu cầu và dự báo/giải pháp: MERGED nội dung quy tắc; DROPPED số liệu dự báo cũ theo lý do trên.
+- 18 các mục không tự coi ngày dự báo là ngày đi, không bịa gió, chi phí, đặt phòng/vé và sử dụng dự phòng: MERGED vào trường 15/18.
+
+F. CTX-NHATRANG-20261111-13-v1 [Tier-1]
+- 14 Viện Hải dương học 40.000₫/người, tổng 80.000₫/2 người; Ponagar 30.000₫/người, tổng 60.000₫/2 người; tổng 140.000₫: MERGED; hai giá lẻ và tổng được giữ đúng đơn vị.
+- 14 mặc định mua tại cổng/quầy do chưa có thông tin đặt online/đặt giờ/phụ phí: MERGED.
+- 14 lịch Viện 08:30, 1,5–2 giờ; Ponagar 07:30, 60–75 phút: MERGED ở dạng thời gian gợi ý, không phải giờ đã đặt.
+- 14 Hòn Chồng 30.000₫/người: DROPPED khỏi quyết định chốt vì chỉ là lựa chọn bổ sung, chưa có xác nhận chọn; không có chi phí di chuyển được xác minh.
+- 15 giờ mở cửa 06:00–18:00, phí không gồm đi lại/ăn uống/phát sinh, phải giữ thời gian cho xe 14:00: MERGED.
+- 15 không khẳng định cần đặt giờ/phí đặt trước; khoảng cách Glory–Viện 400–600m chưa xác minh: MERGED quy tắc; DROPPED việc dùng khoảng cách đó như dữ kiện định tuyến.
+- 16 toàn bộ tác vụ kiểm tra giá/giờ/cách mua vé, xác minh phương tiện Glory–Viện, kiểm tra Hòn Chồng nếu cân nhắc, cập nhật chi phí, chưa có bằng chứng mua vé: MERGED vào mục 16; phần Hòn Chồng giữ là gợi ý chưa chốt hoặc loại theo lý do trên.
+- 17a/17b yêu cầu và câu trả lời vé/lịch trùng trường 14: MERGED một lần vào trường 17.
+- 18 không tự xác nhận mua vé, đặt trước, phụ phí bằng 0, khoảng cách, chi phí di chuyển hoặc ngày lịch: MERGED vào quy tắc chứng cứ.
+
+G. CTX-NHATRANG-20261111-14-v1 [Tier-1]
+- 14 ngân sách ăn từng ngày 250.000₫/500.000₫/200.000₫, tổng 950.000₫, hạn mức 1.500.000₫, dư 550.000₫: MERGED.
+- 14 bốn món đặc sản và lựa chọn quán/giá: MERGED ở mức nhóm món và dải giá còn hữu ích; DROPPED lịch phân bổ từng quán/bữa cũ vì Sổ Gấp ghi nhận phân bổ đã cập nhật ở packet mới.
+- 14 phương án thay thế Nguyễn Loan/Bà Thừa/Năm Beo: DROPPED khỏi quyết định đang chốt vì là phương án có điều kiện khi quán đóng/quá đông, không phải lựa chọn hiện hành; quy tắc dùng phương án thay thế khi cần được KEPT.
+- 15 dải giá Nguyễn Loan 30.000–45.000₫/tô; Đặng Văn Quyên 55.000–65.000₫/phần; Cô Tám 30.000–60.000₫/đĩa; Thanh Sương 150.000–500.000₫/người: MERGED vào trường 17.
+- 15 bữa hải sản giới hạn 300.000₫/2 người, xem bảng giá/cân trước khi gọi; không bắt buộc tiêu hết hạn mức: MERGED.
+- 15 giá là kế hoạch/tham khảo, không phải báo giá bảo đảm; không cộng ngoài ngân sách: MERGED.
+- 16 kiểm tra giờ mở cửa/tình trạng quán, đông khách, bảng giá/cân hải sản, giá thật, ghi chi thực tế: MERGED vào việc đang dở.
+- 17a/17b yêu cầu và kế hoạch ăn lặp trường 14/15: MERGED một lần; giá món được giữ ở trường 17.
+- 18 không coi đặt bàn/giá thực tế/phương án thay thế/chi tiêu phần dư là đã xảy ra; không tự thêm phí: MERGED vào quy tắc chứng cứ và kiểm soát ngân sách.
+
+H. CTX-NHATRANG-20261111-15-v1 [Tier-1]
+- 14 cơ cấu sáu khoản chi 1.400.000₫ + 840.000₫ + 950.000₫ + 140.000₫ + 480.000₫ + 300.000₫ = 4.110.000₫: MERGED; phép tính được giữ một lần.
+- 14 ngân sách 5.000.000₫, dư tổng 890.000₫, phần dư từng hạng mục 260.000₫/550.000₫/360.000₫/200.000₫: MERGED; giữ lưu ý 1.170.000₫ là tổng ba dư lưu trú/ăn uống/tham quan, không phải số dư toàn chuyến.
+- 14 năm nhóm bất định (Glory, taxi/GrabCar, hải sản, thời tiết, giá vé): MERGED.
+- 14 thứ tự ưu tiên sử dụng phần dư, giữ riêng 300.000₫, không coi 890.000₫ là tiền tự do: MERGED.
+- 15 hạn mức từng loại, chi phí nội thành phải tính vào tổng, không cộng số dư con, không dùng quỹ dự phòng cho nâng cấp/ăn thêm/điểm tham quan khi chưa cần: MERGED.
+- 15 tổng 4.110.000₫ là dự toán chứ không phải giao dịch; xe và khách sạn chưa có bằng chứng đã đặt: MERGED.
+- 16 toàn bộ tác vụ xác nhận giá Glory, vé xe, thực trả taxi/Grab, kiểm soát hải sản, kiểm tra vé, chi phí mưa, cập nhật hóa đơn, giữ dự phòng: MERGED thành danh sách việc trường 16.
+- 17a/17b phép cộng, số dư, rủi ro và quy tắc dùng tiền trùng trường 14/15: MERGED một lần vào trường 17.
+- 18 các mục không tự xác nhận giao dịch, không tự đặt giá thực, không dùng dự phòng sai mục đích, không cộng sai số dư: MERGED vào quy tắc và trường 18.
+
+KẾT QUẢ GATE:
+- (a) Tất cả nhóm nội dung trong T3-02 đều có parent tương ứng: PASS.
+- (b) Cả 8 parent đã có disposition theo từng trường/nhóm; không có nhóm nội dung cha bị bỏ không lý do: PASS.
+- Các mục lặp giữa cha đã được MERGED thay vì giữ nhiều bản; xung đột/đã hết hiệu lực được DROPPED kèm căn cứ.
+- Hành động hậu gate: 8 parent đã ở archived/ nên KHÔNG dời; T3-01-v1 tiếp tục ở archived/; chỉ thêm T3-02-v1 vào current/ và cập nhật Sổ Gấp.
+- Word count T3-02-v1 (tách khoảng trắng, toàn bộ file gồm 18 trường + Phần 2) được ghi nhận tại kết quả commit; packet cap được tính cùng T2-02-v1 1.338 từ và block 24-v1 638 từ.
+- Packet sau REBUILD dự kiến: (1 T1, 1 T2, 1 T3), count 3; canonical_packet_version 15.
+- Commit duy nhất: Add block CTX-NHATRANG-20261111-T3-02-v1 (rebuild of T3-01).
+- Word count sau tạo (tách khoảng trắng): T3-02-v1 toàn file = 2423 từ; cap gộp ~4.500: PASS; packet cũ 1.976 + T3-02 2423 = 4399 từ; mục tiêu/cap packet ~6.000: PASS; mục tiêu T3 ≤4.024: PASS.
+Cập nhật lần cuối: 2026-11-12 12:56 +07.
