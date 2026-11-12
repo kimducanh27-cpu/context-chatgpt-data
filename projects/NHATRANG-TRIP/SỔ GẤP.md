@@ -1169,3 +1169,28 @@ block 16-v1 ~1.104 từ + block 17 657 từ = ~1761 từ
 - Trạng thái packet sau fold: (2 T1, 0 T2, 0 T3) = count 2; block current:
 16-v1 + 17-v1. canonical_packet_version 6.
 Cập nhật lần cuối: 2026-11-12 12:15 +07.
+ 
+NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-18 | v1 | current |
+2026-11-12 | Chặng 18 xác nhận phòng Superior City View tại Glory Nha Trang
+Hotel, 420.000₫/đêm, 2 đêm, tổng 840.000₫ | Chặng 18: xác nhận phương án
+phòng khách sạn Glory. Mình vừa kiểm tra lại → Chốt phòng Superior City View
+ở Glory Nha Trang Hotel, 2 đêm, tổng 840.000₫. Việc | Tier-1 đủ 2 phần:
+rồi | source-to-capture: 4 tin, anchor đầu/cuối đã đối chiếu; kiểm tra trùng
+với source_range hiện có: không trùng; điểm cắt tiếp nối block 17-v1 | chưa
+chạy | FOLD
+- Block: CTX-NHATRANG-20261111-18-v1, Tier-1, current; parent_block_ids:
+(chưa có); canonical_packet_version 7.
+- Quyết định: Glory Nha Trang Hotel, Superior City View, 420.000₫/đêm,
+2 đêm, tổng 840.000₫; phòng còn trống khi kiểm tra khung thứ Sáu – Chủ nhật.
+Địa chỉ 84A Trần Phú, trung tâm, gần bãi biển và các quán ăn đã chốt.
+- Ràng buộc: nhận phòng từ 14:00 thứ Sáu; trả phòng trước 12:00 Chủ nhật,
+sau đó ra xe 14:00. Chưa thấy ghi phụ thu/phí dịch vụ khác; giữ nguyên
+840.000₫ trong dự toán. Chưa thanh toán, chưa có mã đặt phòng.
+- Việc đang dở: chờ chốt ngày khởi hành cụ thể rồi mới đặt phòng và thanh
+toán; khi đặt cần xác nhận lại khung thứ Sáu – Chủ nhật còn trống.
+- Word count block 18 (tách khoảng trắng): 643 từ. Packet sau fold:
+block 16-v1 ~1.104 + block 17-v1 657 + block 18 643 = ~2404
+từ (ước tính; block 16-v1 là số ước lượng).
+- Trạng thái packet sau fold: (3 T1, 0 T2, 0 T3) = count 3; block current:
+16-v1 + 17-v1 + 18-v1. canonical_packet_version 7.
+Cập nhật lần cuối: 2026-11-12 12:16 +07.
