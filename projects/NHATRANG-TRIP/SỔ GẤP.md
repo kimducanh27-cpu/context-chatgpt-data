@@ -1194,3 +1194,13 @@ từ (ước tính; block 16-v1 là số ước lượng).
 - Trạng thái packet sau fold: (3 T1, 0 T2, 0 T3) = count 3; block current:
 16-v1 + 17-v1 + 18-v1. canonical_packet_version 7.
 Cập nhật lần cuối: 2026-11-12 12:16 +07.
+
+NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-19 | v1 | current |
+2026-11-12 | Chặng 19 xác nhận vé Viện Hải dương học 40.000₫/người và Ponagar 30.000₫/người, tổng 140.000₫/2 người | Chặng 19: xác nhận giá vé tham quan. Mình vừa tra cứu giá vé: Viện → Chốt giá vé Viện Hải dương học 40.000₫/người và Ponagar 30.000₫/người, tổng 140.000₫ cho 2 | Tier-1 đủ 2 phần: rồi | source-to-capture: 4 tin, anchor đầu/cuối đã đối chiếu; kiểm tra trùng với source_range hiện có: không trùng; điểm cắt tiếp nối block 18-v1 | chưa chạy | FOLD
+- Block: CTX-NHATRANG-20261111-19-v1, Tier-1, current; parent_block_ids: (chưa có); canonical_packet_version 8.
+- Quyết định: Viện Hải dương học 40.000₫/người; Ponagar 30.000₫/người; tổng 140.000₫ cho 2 người. Giá Ponagar mới ghi đè khoản 60.000₫ được nêu trong dòng tóm tắt block 06-v2; đơn vị tính của khoản cũ không rõ trong Sổ Gấp.
+- Ràng buộc: giá chưa gồm phí gửi xe; tham quan ngày 2 và ngày 3; Ponagar buổi sáng ngày 3, giờ 07:30 theo block 13; hai điểm không cần đặt trước.
+- Việc đang dở: chưa mua vé; đến cổng mua vé và giữ hóa đơn để đối chiếu chi phí buổi chiều.
+- Word count block 19 (tách khoảng trắng, chỉ 18 trường): 410 từ. Packet sau fold: block 16-v1 ~1.104 + block 17-v1 657 + block 18-v1 643 + block 19 410 = ~2814 từ (ước tính; block 16-v1 là số ước lượng).
+- Trạng thái packet sau fold: (4 T1, 0 T2, 0 T3) = count 4; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1. canonical_packet_version 8.
+Cập nhật lần cuối: 2026-11-12 12:18 +07.
