@@ -1224,3 +1224,13 @@ NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-21 | v1 | current |
 - Word count block 21 (tách khoảng trắng, chỉ 18 trường): 366 từ. Packet sau fold: 16-v1 ~1.104 + 17-v1 657 + 18-v1 643 + 19-v1 410 + 20-v1 382 + 21-v1 366 = ~3562 từ (ước tính; block 16-v1 là số ước lượng).
 - Trạng thái packet sau fold: (6 T1, 0 T2, 0 T3) = count 6; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1 + 20-v1 + 21-v1. canonical_packet_version 10.
 Cập nhật lần cuối: 2026-11-12 12:22 +07.
+
+NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-22 | v1 | current |
+2026-11-12 | Chặng 22 checklist hành lý: 4 món có sẵn, 4 món cần mua bổ sung; dùng dự phòng 300.000₫ | Chặng 22: chuẩn bị hành lý và checklist trước chuyến đi. Mình vừa kiểm kê → Chốt checklist hành lý: đồ đã có sẵn và đồ mua bổ sung theo danh | Tier-1 đủ 2 phần: rồi | source-to-capture: 4 tin, anchor đầu/cuối đã đối chiếu; kiểm tra trùng với source_range hiện có: không trùng; điểm cắt tiếp nối block 21-v1 | chưa chạy | FOLD
+- Block: CTX-NHATRANG-20261111-22-v1, Tier-1, current; parent_block_ids: (chưa có); canonical_packet_version 11.
+- Quyết định: checklist gồm đồ đã có sẵn (ba lô, sạc dự phòng, đồ bơi, giày đi bộ) và 4 món cần mua bổ sung (áo mưa mỏng, túi chống nước cho điện thoại, dép chống trượt, kem chống nắng). Áo mưa và túi chống nước mua sớm do mùa mưa có thể đến bất ngờ; dép chống trượt dùng cho bãi biển và bến tàu; kem chống nắng chọn loại dùng ngoài trời.
+- Ràng buộc: mua bổ sung D-7 đến D-3, xếp hành lý D-1; ngân sách lấy trong khoản dự phòng 300.000₫ đã chốt, không phát sinh thêm. Mang căn cước công dân, thẻ ngân hàng và một ít tiền mặt.
+- Việc đang dở: mua 4 món bổ sung D-7 đến D-3; xếp hành lý D-1; mang giấy tờ và tiền mặt.
+- Word count block 22 (tách khoảng trắng, chỉ 18 trường): 436 từ. Packet sau fold: 16-v1 ~1.104 + 17-v1 657 + 18-v1 643 + 19-v1 410 + 20-v1 382 + 21-v1 366 + 22-v1 436 = ~3998 từ (ước tính; block 16-v1 là số ước lượng).
+- Trạng thái packet sau fold: (7 T1, 0 T2, 0 T3) = count 7; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1 + 20-v1 + 21-v1 + 22-v1. canonical_packet_version 11.
+Cập nhật lần cuối: 2026-11-12 12:24 +07.
