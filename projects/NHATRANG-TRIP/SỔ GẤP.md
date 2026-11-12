@@ -1145,3 +1145,27 @@ CẬP NHẬT ARCHIVE — TRIAL #5, BƯỚC 3 (WORD-CAP OVERFLOW, BƯỚC (a)):
 - TRẠNG THÁI PACKET SAU ARCHIVE: (1 T1, 0 T2, 0 T3) = count 1; block duy nhất còn current là CTX-NHATRANG-20261111-16-v1 (Tier-1), khoảng 1.104 từ. T3-01-v1 không còn trong current.
 - Phạm vi thay đổi: chỉ NHATRANG-TRIP; không thay đổi HANOI; không tạo block mới.
 Cập nhật lần cuối: 2026-11-12 +07 (Trial #5, bước 3).
+ 
+NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-17 | v1 | current |
+2026-11-12 | Chặng 17 xác nhận phương án xe Phương Trang: đi 08:00 thứ Sáu,
+về 14:00 Chủ nhật, 350.000₫/người/lượt, tổng 1.400.000₫/2 người | Chặng 17:
+xác nhận phương án xe Phương Trang. Mình vừa tra cứu lịch xe → Chốt chuyến
+đi 08:00 thứ Sáu và chuyến về 14:00 Chủ nhật, tổng tiền xe | Tier-1 đủ 2
+phần: rồi | source-to-capture: 4 tin, anchor đầu/cuối đã đối chiếu; kiểm tra
+trùng với các source_range hiện có: không trùng; điểm cắt tiếp nối block
+16-v1 | chưa chạy | FOLD
+- Block: CTX-NHATRANG-20261111-17-v1, Tier-1, current; parent_block_ids:
+(chưa có); canonical_packet_version 6.
+- Dữ kiện chốt: Phương Trang, đi 08:00 thứ Sáu, về 14:00 Chủ nhật;
+350.000₫/người/lượt; tổng 1.400.000₫ cho 2 người/2 lượt. Xe giường nằm,
+khoảng 8 tiếng; đến Nha Trang khoảng 16:00 thứ Sáu, về TP.HCM khoảng 22:00
+Chủ nhật; lịch ngày 1 vẫn giữ được.
+- Ràng buộc/trạng thái: nhà xe có thể đổi giờ nếu ít khách; kiểm tra lại
+vào D-3. Chưa thanh toán, chưa có mã vé; chỉ đặt và trả tiền sau khi chốt
+ngày khởi hành cụ thể.
+- Word count block 17 (tách khoảng trắng): 657 từ. Packet sau fold:
+block 16-v1 ~1.104 từ + block 17 657 từ = ~1761 từ
+(ước tính; chưa tính sai số của block 16).
+- Trạng thái packet sau fold: (2 T1, 0 T2, 0 T3) = count 2; block current:
+16-v1 + 17-v1. canonical_packet_version 6.
+Cập nhật lần cuối: 2026-11-12 12:15 +07.
