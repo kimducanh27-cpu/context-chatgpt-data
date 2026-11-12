@@ -1265,3 +1265,15 @@ CẬP NHẬT MERGE — TEST 24 / PROMPT D TIER-2 THUẦN (2026-11-12 12:30 +07):
 - Word count T2-02-v1 (tách khoảng trắng, toàn bộ file gồm 18 trường + Phần 2): sẽ được xác nhận trong kiểm tra sau tạo file.
 - Phạm vi thay đổi: chỉ NHATRANG-TRIP; không chạm HANOI.
 Cập nhật lần cuối: 2026-11-12 12:30 +07.
+
+
+FOLD — CHẶNG 24 (2026-11-12 12:35 +07):
+NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-24 | v1 | current | 2026-11-12 | Chặng 24 chốt ngày khởi hành 20/11/2026–22/11/2026 | Chặng 24: chốt ngày khởi hành. Mình vừa đối chiếu lịch làm việc thứ Sáu → Chốt ngày khởi hành: đi thứ Sáu 20/11/2026, về Chủ nhật 22/11/2026. Giờ xe và | Tier-1 đủ 2 phần: rồi | source-to-capture: người dùng khai báo đã kiểm tra 4 tin; anchor đầu/cuối khớp đoạn trích được cung cấp; kiểm tra trùng source_range với Sổ Gấp: không trùng | chưa chạy | FOLD
+- Block 24: Tier-1, version 1, status current; parent_block_ids: (chưa có); canonical_packet_version 14.
+- Quyết định: [GHI ĐÈ CTX-NHATRANG-20261111-T2-02] chốt ngày đi thứ Sáu 20/11/2026, về Chủ nhật 22/11/2026; người dùng đã đối chiếu lịch làm việc và xác nhận hai ngày đi được, đúng thứ trong tuần.
+- Giữ nguyên giờ xe Phương Trang 08:00 thứ Sáu và 14:00 Chủ nhật; giữ nguyên phòng Glory 2 đêm 20–22/11, nhận phòng từ 14:00 thứ Sáu, trả phòng trước 12:00 Chủ nhật.
+- Việc đang dở: đặt vé xe Phương Trang, đặt phòng Glory, đặt bàn và mua vé tham quan. Chặng nguồn không xác nhận đã đặt, thanh toán hoặc nhận mã xác nhận.
+- Word count block 24 (tách khoảng trắng, chỉ 18 trường): 638 từ. Word count T2-02-v1 (tách khoảng trắng, toàn bộ file gồm 18 trường + Phần 2): 1338 từ. Tổng packet hiện hành (block 24 + T2-02-v1): 1976 từ.
+- Trạng thái packet sau fold: (1 T1, 1 T2, 0 T3) = count 2; current: CTX-NHATRANG-20261111-24-v1 + CTX-NHATRANG-20261111-T2-02-v1; canonical_packet_version 14.
+- Phạm vi thay đổi: chỉ NHATRANG-TRIP; không thay đổi dự án HANOI.
+Cập nhật lần cuối: 2026-11-12 12:35 +07.
