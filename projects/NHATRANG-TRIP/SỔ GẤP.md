@@ -1214,3 +1214,13 @@ NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-20 | v1 | current |
 - Word count block 20 (tách khoảng trắng, chỉ 18 trường): 382 từ. Packet sau fold: block 16-v1 ~1.104 + block 17-v1 657 + block 18-v1 643 + block 19-v1 410 + block 20 382 = ~3196 từ (ước tính; block 16-v1 là số ước lượng).
 - Trạng thái packet sau fold: (5 T1, 0 T2, 0 T3) = count 5; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1 + 20-v1. canonical_packet_version 9.
 Cập nhật lần cuối: 2026-11-12 12:20 +07.
+
+NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-21 | v1 | current |
+2026-11-12 | Chặng 21 chốt taxi ngày 1 ~100.000₫, GrabCar ngày 3 ~380.000₫, tổng 480.000₫ | Chặng 21: chốt phương án di chuyển nội thành. Mình vừa đối chiếu lịch trình: ngày 1 → Chốt phương án di chuyển nội thành: taxi ngày 1 khoảng 100.000₫, GrabCar ngày 3 | Tier-1 đủ 2 phần: rồi | source-to-capture: 4 tin, anchor đầu/cuối đã đối chiếu; kiểm tra trùng với source_range hiện có: không trùng; điểm cắt tiếp nối block 20-v1 | chưa chạy | FOLD
+- Block: CTX-NHATRANG-20261111-21-v1, Tier-1, current; parent_block_ids: (chưa có); canonical_packet_version 10.
+- Quyết định: taxi ngày 1 khoảng 100.000₫; GrabCar ngày 3 từ Ponagar về khách sạn rồi ra bến xe khoảng 380.000₫; tổng 480.000₫ đúng dự toán. Ngày 2 đi bộ vì các điểm tham quan gần khách sạn.
+- Ràng buộc: giá GrabCar có thể thay đổi theo giờ cao điểm; giữ tổng 480.000₫ trong dự toán; mang đủ tiền mặt trả taxi ngày 1.
+- Việc đang dở: kiểm tra giá GrabCar tại thời điểm đặt xe ngày 3; mang đủ tiền mặt trả taxi ngày 1.
+- Word count block 21 (tách khoảng trắng, chỉ 18 trường): 366 từ. Packet sau fold: 16-v1 ~1.104 + 17-v1 657 + 18-v1 643 + 19-v1 410 + 20-v1 382 + 21-v1 366 = ~3562 từ (ước tính; block 16-v1 là số ước lượng).
+- Trạng thái packet sau fold: (6 T1, 0 T2, 0 T3) = count 6; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1 + 20-v1 + 21-v1. canonical_packet_version 10.
+Cập nhật lần cuối: 2026-11-12 12:22 +07.
