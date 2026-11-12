@@ -1273,7 +1273,7 @@ NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-24 | v1 | current | 2026-11
 - Quyết định: [GHI ĐÈ CTX-NHATRANG-20261111-T2-02] chốt ngày đi thứ Sáu 20/11/2026, về Chủ nhật 22/11/2026; người dùng đã đối chiếu lịch làm việc và xác nhận hai ngày đi được, đúng thứ trong tuần.
 - Giữ nguyên giờ xe Phương Trang 08:00 thứ Sáu và 14:00 Chủ nhật; giữ nguyên phòng Glory 2 đêm 20–22/11, nhận phòng từ 14:00 thứ Sáu, trả phòng trước 12:00 Chủ nhật.
 - Việc đang dở: đặt vé xe Phương Trang, đặt phòng Glory, đặt bàn và mua vé tham quan. Chặng nguồn không xác nhận đã đặt, thanh toán hoặc nhận mã xác nhận.
-- Word count block 24 (tách khoảng trắng, chỉ 18 trường): 638 từ. Word count T2-02-v1 (tách khoảng trắng, toàn bộ file gồm 18 trường + Phần 2): 1338 từ. Tổng packet hiện hành (block 24 + T2-02-v1): 1976 từ.
+- Word count block 24 (tách khoảng trắng, chỉ 18 trường): 638 từ. Word count T2-02-v1 (tách khoảng trắng, chỉ 18 trường): 1296 từ; toàn bộ file gồm 18 trường + Phần 2: 1338 từ. Tổng packet hiện hành theo cùng cách đếm 18 trường mỗi block (block 24 + T2-02-v1): 1934 từ.
 - Trạng thái packet sau fold: (1 T1, 1 T2, 0 T3) = count 2; current: CTX-NHATRANG-20261111-24-v1 + CTX-NHATRANG-20261111-T2-02-v1; canonical_packet_version 14.
 - Phạm vi thay đổi: chỉ NHATRANG-TRIP; không thay đổi dự án HANOI.
 Cập nhật lần cuối: 2026-11-12 12:35 +07.
