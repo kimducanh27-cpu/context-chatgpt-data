@@ -1204,3 +1204,13 @@ NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-19 | v1 | current |
 - Word count block 19 (tách khoảng trắng, chỉ 18 trường): 410 từ. Packet sau fold: block 16-v1 ~1.104 + block 17-v1 657 + block 18-v1 643 + block 19 410 = ~2814 từ (ước tính; block 16-v1 là số ước lượng).
 - Trạng thái packet sau fold: (4 T1, 0 T2, 0 T3) = count 4; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1. canonical_packet_version 8.
 Cập nhật lần cuối: 2026-11-12 12:18 +07.
+
+NHATRANG-TRIP | S-20261111-A | CTX-NHATRANG-20261111-20 | v1 | current |
+2026-11-12 | Chặng 20 chốt ba quán: M&K tối ngày 1, Nguyễn Loan tối ngày 2, Thanh Sương trưa ngày 3 | Chặng 20: chốt các quán ăn theo lịch trình. Mình vừa đối chiếu lại: M&K → Chốt ba quán ăn: M&K (tối ngày 1), Nguyễn Loan (tối ngày 2), Thanh Sương | Tier-1 đủ 2 phần: rồi | source-to-capture: 4 tin, anchor đầu/cuối đã đối chiếu; kiểm tra trùng với source_range hiện có: không trùng; điểm cắt tiếp nối block 19-v1 | chưa chạy | FOLD
+- Block: CTX-NHATRANG-20261111-20-v1, Tier-1, current; parent_block_ids: (chưa có); canonical_packet_version 9.
+- Quyết định: M&K (tối ngày 1), Nguyễn Loan (tối ngày 2), Thanh Sương (trưa ngày 3). Lý do: các quán gần khu vực lưu trú và điểm tham quan; Nguyễn Loan phục vụ đặc sản Nha Trang; Thanh Sương gần bến xe, thuận tiện trước chuyến về 14:00.
+- Ràng buộc: ngân sách ăn uống giữ trong dự toán, không phát sinh thêm; các quán không yêu cầu đặt trước. Bữa sáng ăn gần khách sạn theo thực đơn địa phương, không chốt quán.
+- Việc đang dở: đặt bàn trước ngày đi nếu cần.
+- Word count block 20 (tách khoảng trắng, chỉ 18 trường): 382 từ. Packet sau fold: block 16-v1 ~1.104 + block 17-v1 657 + block 18-v1 643 + block 19-v1 410 + block 20 382 = ~3196 từ (ước tính; block 16-v1 là số ước lượng).
+- Trạng thái packet sau fold: (5 T1, 0 T2, 0 T3) = count 5; block current: 16-v1 + 17-v1 + 18-v1 + 19-v1 + 20-v1. canonical_packet_version 9.
+Cập nhật lần cuối: 2026-11-12 12:20 +07.
